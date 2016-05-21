@@ -4,5 +4,5 @@
   - http://www.sdsfoodmenu.co.kr:9106/foodcourt/menuplanner/list
 
 
-<h2>Usage(CLI)</h2>
+<h2>Usage(Command Line Interface)</h2>
 $ node server.js
