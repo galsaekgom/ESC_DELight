@@ -2,24 +2,38 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>DELight</title>
+
+    <!--Bootstrap-->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <link href="assets/css/delight.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-        <h1>DELight</h1>
-    </header>
+    <div class="container">
+        <header>
+            <div class="page-header">
+                <h1>DELight</h1>
+            </div>
+        </header>
 
-    <main>
-        <h1>Hello DELight</h1>	<!-- heechang added 1 line for broswer test -->
-        <section class="menus">
-        </section>
-    </main>
+        <main class="container">
+            <div class="row menu-wrapper">
+                <section class="menulist"></section>
+            </div>
+        </main>
 
-    <footer>
-        (c) 2016 ESC
-    </footer>
+        <footer class="footer">
+            ©  2016 ESC
+        </footer>
 
-<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-<script src="js/app.js"></script>
+    </div>
+
+    <script src="lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
