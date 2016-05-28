@@ -1,0 +1,15 @@
+[
+  {
+    "result_code" : "FAIL",
+    "result_data" : [
+      {
+        "text_kr"	: "지금은 영업하지 않습니다",
+        "text_en"	: "We are closed now",
+        "time_schedule"	: "운영시간 안내",
+        "breakfast"	: "아침 06:30 - 08:15",
+        "lunch"		: "아침 11:30 - 12:30",
+        "dinner"	: "저녁 18:00 - 19:00"
+      }
+    ]
+  }
+]
