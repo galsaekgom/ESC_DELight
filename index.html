@@ -35,5 +35,35 @@
     <script src="lib/jquery/jquery-1.12.4.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
+
+
+    <!-- start : heechang added -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $.ajax({
+            url: 'http://localhost:8081/food_info',
+            type: 'GET',
+            jsonpCallback: 'callback',
+            success: function (data) {
+                console.log("data:", data);
+	        output = data;
+                $('#crawlingData').html(output);
+            },
+            error: function (xhr, status, error) {
+                console.log('Error: ' + error.message);
+                $('#crawlingData').html('Error connecting to the server.');
+            },
+        });
+    });
+    </script>
+    <br/>
+    <div>
+    <p>Crawling Data</p>
+    </div>
+    <div id="crawlingData">
+    </div>
+    <!-- end : heechang added -->
+
 </body>
 </html>
