@@ -1,0 +1,30 @@
+{
+  "name": "esc-delight",
+  "version": "1.0.0",
+  "description": "Enhanced UI for Delacourt",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluefriday/ESC_DELight.git"
+  },
+  "author": "ESC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluefriday/ESC_DELight/issues"
+  },
+  "homepage": "https://github.com/bluefriday/ESC_DELight#readme",
+  "devDependencies": {
+    "cheerio": "^0.20.0",
+    "crawler": "^0.4.3",
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "url": "^0.11.0"
+  }
+}
