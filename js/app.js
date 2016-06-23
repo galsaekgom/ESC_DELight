@@ -16,7 +16,7 @@ function drawMenu(data){
                     '<div class="menu">'+
                         '<div class="store">'+(data.store || 'noname') +'</div>'+
                         '<div class="img">'+
-                            '<img class="img-responsive center-block" src="'+data.img_src+'">'+
+                            '<img class="center-block" src="'+data.img_src+'">'+
                         '</div>'+
                         '<div class="menu-text">'+
                             '<div class="cal right-block">'+data.menu_cal+'kcal</div>'+
