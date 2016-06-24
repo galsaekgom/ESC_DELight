@@ -12,9 +12,16 @@ $(function(){
 function drawMenu(data){
 
     $('.menulist')
-        .append('<div class="menu row">'+
-            '<div class="store col-md-12"><h3>'+(data.store || 'noname') +'</h3></div>' +
-            '<div class="img col-xs-4 col-sm-4"><img src="'+data.img_src+'"/></div>'+
-            '<div class="name col-xs-6 col-sm-4">'+data.menu_nm_kr+'<br/>'+data.menu_cal+'kcal</div>' +
-            '</div>');
+        .append('<div class="menu-wrapper col-lg-3 col-xs-4">'+
+                    '<div class="menu">'+
+                        '<div class="store">'+(data.store || 'noname') +'</div>'+
+                        '<div class="img">'+
+                            '<img class="center-block" src="'+data.img_src+'">'+
+                        '</div>'+
+                        '<div class="menu-text">'+
+                            '<div class="cal right-block">'+data.menu_cal+'kcal</div>'+
+                            '<div class="name">'+data.menu_nm_kr+'</div>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>');
 }
