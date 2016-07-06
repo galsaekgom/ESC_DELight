@@ -19,6 +19,7 @@ body{
 }
 
 .menu{
+    background-color : white;
     border-radius: 4px 4px 0px 0px;
     border-top: 2px solid #ff9900;
     height : 100%;
