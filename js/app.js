@@ -10,18 +10,6 @@ $(function(){
 
 
 function drawMenu(data){
-
     $('.menulist')
-        .append('<div class="menu-wrapper col-lg-3 col-xs-4">'+
-                    '<div class="menu">'+
-                        '<div class="store">'+(data.store || 'noname') +'</div>'+
-                        '<div class="img">'+
-                            '<img class="center-block" src="'+data.img_src+'">'+
-                        '</div>'+
-                        '<div class="menu-text">'+
-                            '<div class="cal right-block">'+data.menu_cal+'kcal</div>'+
-                            '<div class="name">'+data.menu_nm_kr+'</div>'+
-                        '</div>'+
-                    '</div>'+
-                '</div>');
+        .loadTemplate("templates/menu.tpl.html", data, {append:true});
 }

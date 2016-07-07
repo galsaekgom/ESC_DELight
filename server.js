@@ -24,9 +24,9 @@ app.get('/food_info', function(request, response) {
 
     var crawler_obj = new Crawler({
         maxConnections	: 10,
-	callback	: function(error, result, $){
-            //to do
-	}
+        callback	: function(error, result, $){
+                //to do
+        }
     });
 
     crawler_obj.queue([{
@@ -43,42 +43,40 @@ app.get('/food_info', function(request, response) {
             var isSuccess = true; //개발 중에는 false 처리. (추후에 결과값을 분석해서 true / false 판정 로직 추가)
 
             if(isSuccess){
-		crawling_data =
-                {
-                    "result_code" : "OK",
-                    "result_data" : [
-                        {
-                            "menu_nm_kr" : "정어리 숯불구이",
-                            "menu_nm_en" : "charcoal-broiled fish",
-                            "menu_cal"   : "552",
-                            "menu_cost"  : "3500",
-                            "img_src"    : "https://upload.wikimedia.org/wikipedia/en/1/13/Slime_%28Dragon_Quest%29.jpg"
-                        },
-                        {
-                           "menu_nm_kr" : "감자 샐러드",
-                            "menu_nm_en" : "potato salad",
-                            "menu_cal"   : "455",
-                            "menu_cost"  : "4500",
-                            "img_src"    : "https://upload.wikimedia.org/wikipedia/en/1/13/Slime_%28Dragon_Quest%29.jpg"
-                        },
-                        {
-                            "menu_nm_kr" : "생선회 와작와작",
-                            "menu_nm_en" : "sliced raw fish",
-                            "menu_cal"   : "770",
-                            "menu_cost"  : "7500",
-                            "img_src"    : "https://upload.wikimedia.org/wikipedia/en/1/13/Slime_%28Dragon_Quest%29.jpg"
-                        },
-                        {
-                            "menu_nm_kr" : "숲의 샐러드",
-                            "menu_nm_en" : "salad of forest",
-                            "menu_cal"   : "1200",
-                            "menu_cost"  : "8000",
-                            "img_src"    : "https://upload.wikimedia.org/wikipedia/en/1/13/Slime_%28Dragon_Quest%29.jpg"
-                        }
-                    ]
-                }
-            }
-            else{
+                crawling_data = {
+                                    "result_code" : "OK",
+                                    "result_data" : [
+                                        {
+                                            "menu_nm_kr" : "정어리 숯불구이",
+                                            "menu_nm_en" : "charcoal-broiled fish",
+                                            "menu_cal"   : "552",
+                                            "menu_cost"  : "3500",
+                                            "img_src"    : "https://upload.wikimedia.org/wikipedia/en/1/13/Slime_%28Dragon_Quest%29.jpg"
+                                        },
+                                        {
+                                           "menu_nm_kr" : "감자 샐러드",
+                                            "menu_nm_en" : "potato salad",
+                                            "menu_cal"   : "455",
+                                            "menu_cost"  : "4500",
+                                            "img_src"    : "https://upload.wikimedia.org/wikipedia/en/1/13/Slime_%28Dragon_Quest%29.jpg"
+                                        },
+                                        {
+                                            "menu_nm_kr" : "생선회 와작와작",
+                                            "menu_nm_en" : "sliced raw fish",
+                                            "menu_cal"   : "770",
+                                            "menu_cost"  : "7500",
+                                            "img_src"    : "https://upload.wikimedia.org/wikipedia/en/1/13/Slime_%28Dragon_Quest%29.jpg"
+                                        },
+                                        {
+                                            "menu_nm_kr" : "숲의 샐러드",
+                                            "menu_nm_en" : "salad of forest",
+                                            "menu_cal"   : "1200",
+                                            "menu_cost"  : "8000",
+                                            "img_src"    : "https://upload.wikimedia.org/wikipedia/en/1/13/Slime_%28Dragon_Quest%29.jpg"
+                                        }
+                                    ]
+                                }
+            }else{
                 var span_data = $('table').find('span');
 
                 //console.log($(span_data[i]).text());
